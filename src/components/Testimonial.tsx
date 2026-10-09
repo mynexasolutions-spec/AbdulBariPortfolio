@@ -52,21 +52,21 @@ export default function Testimonial() {
       name: "John Smith",
       role: "CEO at Fintech Labs",
       quote:
-        "“Abdul is an exceptional builder with rare precision. He transformed our concept into a high-performance web platform that exceeded our operational benchmarks.”",
+        "“Abdul is an exceptional builder with rare precision. He transformed our vision into a high-performance web platform that exceeded all benchmarks.”",
       rating: 5,
     },
     {
       name: "Sarah Jenkins",
       role: "VP Product at Streamline",
       quote:
-        "“Collaborating with Abdul Bari and Nexa Solutions was seamless. Their attention to UX detail and scalable code architecture boosted our conversion metrics by 140%.”",
+        "“Collaborating with Abdul and Nexa Solutions was seamless. Their attention to UX and performance boosted our conversions by 140%.”",
       rating: 5,
     },
     {
       name: "Marcus Aurelius",
       role: "Founder at Nova Media",
       quote:
-        "“Strategic vision, punctual delivery, and top-tier technical craftsmanship. Abdul consistently delivers products that scale reliably under pressure.”",
+        "“Strategic vision, rapid execution, and top-tier technical craftsmanship. Abdul consistently builds products that scale under pressure.”",
       rating: 5,
     },
   ];
@@ -75,8 +75,8 @@ export default function Testimonial() {
     if (cardRef.current) {
       gsap.fromTo(
         cardRef.current,
-        { opacity: 0.4, y: 10 },
-        { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", clearProps: "all" }
+        { opacity: 0.4, y: 8 },
+        { opacity: 1, y: 0, duration: 0.3, ease: "power2.out", clearProps: "all" }
       );
     }
   };
@@ -97,78 +97,79 @@ export default function Testimonial() {
     <section
       ref={sectionRef}
       id="testimonials"
-      className="bg-background py-10 sm:py-14 lg:py-16 overflow-hidden border-b border-border/5"
+      className="bg-background py-8 sm:py-10 lg:py-12 overflow-hidden border-b border-border/5"
     >
       <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center">
           {/* Left Title */}
-          <div className="testimonial-left xl:col-span-6 text-center xl:text-left flex flex-col items-center xl:items-start">
-            <span className="text-primary text-xs sm:text-sm uppercase tracking-widest font-bold font-Syne block mb-1.5 sm:mb-2">
+          <div className="testimonial-left lg:col-span-5 text-center lg:text-left flex flex-col items-center lg:items-start">
+            <span className="text-primary text-xs uppercase tracking-widest font-bold font-Syne block mb-1">
               Testimonial
             </span>
-            <h2 className="relative font-Syne font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-[58px] text-foreground leading-tight">
+            <h2 className="relative font-Syne font-bold text-2xl sm:text-3xl lg:text-[38px] text-foreground leading-tight">
               <span className="relative inline-block">
-                <span className="absolute -top-1 -left-2 w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-accent/25 -z-10" />
+                <span className="absolute -top-1 -left-2 w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-accent/25 -z-10" />
                 Client Feedback
               </span>
             </h2>
-            <p className="text-muted text-sm sm:text-base lg:text-lg mt-3 sm:mt-4 max-w-md leading-relaxed mx-auto xl:mx-0">
-              Discover what founders and tech leaders say about collaborating with Abdul Bari on high-impact digital products.
+            <p className="text-muted text-xs sm:text-sm lg:text-[15px] mt-2 sm:mt-2.5 max-w-sm leading-relaxed mx-auto lg:mx-0">
+              What founders & partners say about collaborating with Abdul Bari.
             </p>
 
             {/* Carousel Navigation Buttons */}
-            <div className="flex items-center justify-center xl:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 mt-4 sm:mt-5">
               <button
                 onClick={handlePrev}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-border bg-surface/60 flex items-center justify-center text-foreground hover:bg-surface-hover hover:text-white hover:border-accent/40 transition-all shadow-sm active:scale-95"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-border bg-surface/60 flex items-center justify-center text-foreground hover:bg-surface-hover hover:text-white hover:border-accent/40 transition-all shadow-sm active:scale-95"
                 aria-label="Previous testimonial"
               >
-                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={handleNext}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent border border-accent text-white flex items-center justify-center hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/25 transition-all shadow-sm active:scale-95"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-accent border border-accent text-white flex items-center justify-center hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/25 transition-all shadow-sm active:scale-95"
                 aria-label="Next testimonial"
               >
-                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                <ChevronRight className="w-4 h-4" />
               </button>
-              <span className="text-xs sm:text-sm font-bold text-muted ml-2">
+              <span className="text-xs font-bold text-muted ml-2">
                 0{currentIndex + 1} / 0{testimonials.length}
               </span>
             </div>
           </div>
 
           {/* Right Testimonial Card */}
-          <div className="xl:col-span-6 w-full">
+          <div className="lg:col-span-7 w-full">
             <div
               ref={cardRef}
-              className="p-5 sm:p-8 lg:p-10 bg-surface rounded-xl border border-white/10 relative shadow-xl hover:border-accent/40 transition-all duration-300"
+              className="p-4 sm:p-6 lg:p-7 bg-surface/90 rounded-xl border border-white/10 relative shadow-lg hover:border-accent/40 transition-all duration-300"
             >
-              <Quote className="w-8 h-8 sm:w-12 sm:h-12 text-primary mb-4 sm:mb-6" />
-
-              {/* Star Rating */}
-              <div className="flex items-center gap-1 mb-4 sm:mb-6">
-                {Array.from({ length: current.rating }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 sm:w-5 sm:h-5 fill-primary text-primary"
-                  />
-                ))}
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <Quote className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
+                {/* Star Rating */}
+                <div className="flex items-center gap-1">
+                  {Array.from({ length: current.rating }).map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-primary text-primary"
+                    />
+                  ))}
+                </div>
               </div>
 
               {/* Quote text */}
-              <blockquote className="font-Syne font-bold text-base sm:text-xl lg:text-2xl text-foreground leading-relaxed mb-6 sm:mb-8 min-h-[90px] sm:min-h-[110px]">
+              <blockquote className="font-Syne font-medium text-sm sm:text-base lg:text-[17px] text-foreground leading-relaxed mb-4 sm:mb-5 min-h-[60px] sm:min-h-[70px]">
                 {current.quote}
               </blockquote>
 
               {/* Author Info */}
-              <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-border/50">
-                <div className="w-8 sm:w-10 h-0.5 bg-border" />
+              <div className="flex items-center gap-3 pt-3 sm:pt-4 border-t border-border/50">
+                <div className="w-6 sm:w-8 h-0.5 bg-primary" />
                 <div>
-                  <h4 className="font-Syne font-bold text-base sm:text-lg text-foreground">
+                  <h4 className="font-Syne font-bold text-sm sm:text-base text-foreground leading-tight">
                     {current.name}
                   </h4>
-                  <span className="text-xs sm:text-sm font-medium text-muted">
+                  <span className="text-xs text-muted font-medium">
                     {current.role}
                   </span>
                 </div>

@@ -78,8 +78,8 @@ export default function Services() {
       icon: <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      title: "Business Strategy",
-      subtitle: "Strategic roadmap, market expansion & long-term vision",
+      title: "Ads Specialist",
+      subtitle: "Targeted Meta & Google Ads campaigns driving high ROI, conversions & revenue",
       icon: <Target className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
   ];

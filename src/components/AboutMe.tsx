@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Briefcase, GraduationCap, BookOpen, Quote } from "lucide-react";
+import { MapPin, Briefcase, GraduationCap, Quote, CheckCircle2 } from "lucide-react";
 
 export default function AboutMe() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -87,11 +87,17 @@ export default function AboutMe() {
               </h2>
             </div>
 
-            <p className="about-bio font-sans text-muted text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              I&apos;m an entrepreneur with a passion for technology, innovation and building products
-              that create real value. With a strong foundation in business and a hands-on approach to
-              development, I focus on turning ideas into scalable digital solutions.
-            </p>
+            <div className="about-bio space-y-2.5 max-w-2xl mx-auto lg:mx-0">
+              <p className="font-Syne font-bold text-lg sm:text-xl lg:text-[22px] tracking-tight bg-gradient-to-r from-foreground via-primary-light to-primary bg-clip-text text-transparent">
+                Founder. Builder. Occasional overthinker.
+              </p>
+              <p className="font-sans text-foreground/90 font-medium text-sm sm:text-base lg:text-[17px] leading-relaxed">
+                I turn ideas into products and products into businesses.
+              </p>
+              <p className="font-sans text-muted text-sm sm:text-base lg:text-[16px] leading-relaxed">
+                Currently running <span className="text-foreground font-semibold">Nexa Solutions</span> — but mostly just trying to make cool stuff that matters.
+              </p>
+            </div>
 
             {/* 4 Metadata Cards with mobile responsive grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 pt-3 sm:pt-6 w-full">
@@ -125,8 +131,23 @@ export default function AboutMe() {
                 </div>
               </div>
 
-              {/* 3. Education 1 */}
+              {/* 3. Projects Delivered */}
               <div className="about-stat-card flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-0 rounded-lg bg-surface/30 sm:bg-transparent border border-white/5 sm:border-0 group cursor-default">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-border bg-surface/90 flex items-center justify-center text-primary shrink-0 transition-all duration-300 ease-out group-hover:scale-110 group-hover:border-primary group-hover:bg-primary/10 group-hover:shadow-lg group-hover:shadow-primary/25">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                </div>
+                <div className="text-left">
+                  <span className="block text-xs sm:text-[15px] font-bold text-foreground font-Syne leading-tight group-hover:text-primary transition-colors">
+                    200+
+                  </span>
+                  <span className="block text-[10px] sm:text-xs text-muted font-medium">
+                    Projects Delivered
+                  </span>
+                </div>
+              </div>
+
+              {/* 4. Education */}
+              <div className="about-stat-card flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-0 rounded-lg bg-surface/30 sm:bg-transparent border border-white/5 sm:border-0 sm:border-l sm:border-border/60 sm:pl-4 group cursor-default">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-border bg-surface/90 flex items-center justify-center text-primary shrink-0 transition-all duration-300 ease-out group-hover:scale-110 group-hover:border-primary group-hover:bg-primary/10 group-hover:shadow-lg group-hover:shadow-primary/25">
                   <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
                 </div>
@@ -136,21 +157,6 @@ export default function AboutMe() {
                   </span>
                   <span className="block text-[10px] sm:text-xs text-muted font-medium">
                     AMU FMSR
-                  </span>
-                </div>
-              </div>
-
-              {/* 4. Education 2 */}
-              <div className="about-stat-card flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-0 rounded-lg bg-surface/30 sm:bg-transparent border border-white/5 sm:border-0 sm:border-l sm:border-border/60 sm:pl-4 group cursor-default">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-border bg-surface/90 flex items-center justify-center text-primary shrink-0 transition-all duration-300 ease-out group-hover:scale-110 group-hover:border-primary group-hover:bg-primary/10 group-hover:shadow-lg group-hover:shadow-primary/25">
-                  <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
-                </div>
-                <div className="text-left">
-                  <span className="block text-xs sm:text-[15px] font-bold text-foreground font-Syne leading-tight group-hover:text-primary transition-colors">
-                    Bachelors
-                  </span>
-                  <span className="block text-[10px] sm:text-xs text-muted font-medium">
-                    Economics
                   </span>
                 </div>
               </div>

@@ -69,20 +69,7 @@ export default function FounderJourney() {
   }, []);
 
   const journeyData: JourneyItem[] = [
-    {
-      id: "nexa",
-      year: "2025",
-      title: "Nexa Solutions",
-      role: "Co-Founder",
-      category: "Digital Solutions & Web Development",
-      tags: ["Next.js", "React", "Tailwind CSS", "Web Development"],
-      logoType: "image",
-      imageSrc: "/nex_soltuions.png",
-      accentColor: "#7C71FF",
-      glowColor: "rgba(124, 113, 255, 0.4)",
-      nodeColor: "from-[#7C71FF] to-[#5548E0]",
-      link: "https://www.nexa-solutions.de/",
-    },
+
     {
       id: "meagle",
       year: "2026",
@@ -95,6 +82,20 @@ export default function FounderJourney() {
       glowColor: "rgba(105, 93, 255, 0.4)",
       nodeColor: "from-[#695DFF] to-[#443ACC]",
       link: "https://www.meagle360.com/",
+    },
+        {
+      id: "nexa",
+      year: "2025",
+      title: "Nexa Solutions",
+      role: "Co-Founder",
+      category: "Digital Solutions & Web Development",
+      tags: ["Next.js", "React", "Tailwind CSS", "Web Development"],
+      logoType: "image",
+      imageSrc: "/nex_soltuions.png",
+      accentColor: "#7C71FF",
+      glowColor: "rgba(124, 113, 255, 0.4)",
+      nodeColor: "from-[#7C71FF] to-[#5548E0]",
+      link: "https://www.nexa-solutions.de/",
     },
     {
       id: "it-business",
@@ -125,11 +126,8 @@ export default function FounderJourney() {
       <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="journey-header mb-8 sm:mb-12 text-center md:text-left">
-          <span className="inline-block text-primary text-sm sm:text-base font-bold font-Syne tracking-wide mb-1.5 sm:mb-2">
-            My Journey
-          </span>
           <h2 className="font-Syne font-bold text-3xl sm:text-4xl lg:text-[44px] text-foreground leading-tight tracking-tight">
-            Founder Journey Experience
+            My Journey
           </h2>
           <p className="font-sans text-muted text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-2xl mt-2 sm:mt-3 mx-auto md:mx-0">
             Building ideas, creating digital solutions and growing with every step of the journey.

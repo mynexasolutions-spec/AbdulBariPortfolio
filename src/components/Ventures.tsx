@@ -96,11 +96,8 @@ export default function Ventures() {
       <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="venture-header mb-8 sm:mb-12 text-center md:text-left">
-          <span className="inline-block text-primary text-sm sm:text-base font-bold font-Syne tracking-wide mb-1.5 sm:mb-2">
-            My Ventures
-          </span>
           <h2 className="font-Syne font-bold text-3xl sm:text-4xl lg:text-[44px] text-foreground leading-tight tracking-tight">
-            The Companies I Co-Founded
+             My Ventures
           </h2>
         </div>
 
