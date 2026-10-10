@@ -218,21 +218,21 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="bg-[#000000] relative pt-[110px] sm:pt-[130px] md:pt-[150px] pb-16 sm:pb-20 md:pb-[100px] overflow-hidden"
+      className="bg-[#000000] relative pt-[90px] sm:pt-[120px] md:pt-[150px] pb-12 sm:pb-16 md:pb-[100px] overflow-hidden"
     >
       <div className="max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 2xl:-mx-4">
           <div className="xl:pt-8 flex flex-col items-center text-center md:items-start md:text-left">
             {/* Top Greeting Badge */}
-            <span className="hero-greeting font-Syne text-foreground font-bold text-xl sm:text-2xl lg:text-[32px] leading-none flex items-center justify-center md:justify-start mb-4 sm:mb-6">
-              <span className="mr-3 sm:mr-6">
+            <span className="hero-greeting font-Syne text-foreground font-bold text-lg sm:text-2xl lg:text-[32px] leading-none flex items-center justify-center md:justify-start mb-2.5 sm:mb-5">
+              <span className="mr-2 sm:mr-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="65"
                   height="2"
                   viewBox="0 0 65 2"
                   fill="none"
-                  className="w-10 sm:w-[65px]"
+                  className="w-8 sm:w-[65px]"
                 >
                   <path d="M0 1H65" stroke="#695DFF" />
                 </svg>
@@ -240,7 +240,7 @@ export default function Hero() {
               Hello, I’m
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                className="ml-2 w-6 h-6 sm:w-8 sm:h-8 object-contain"
+                className="ml-2 w-5 h-5 sm:w-8 sm:h-8 object-contain"
                 src="/assets/images/icon/victory.png"
                 alt="icon"
               />
@@ -248,63 +248,69 @@ export default function Hero() {
 
             {/* Hero Main Name Display */}
             <div className="relative z-[1] flex flex-col items-center md:items-start">
-              <h1 className="hero-title-word relative font-Syne text-foreground font-bold text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-[0.95] md:leading-[1] tracking-tight before:rounded-full before:bg-accent before:block before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 md:before:left-0 md:before:translate-x-0 before:-z-[1] before:w-12 before:h-12 sm:before:w-16 sm:before:w-16 md:before:w-20 md:before:h-20 lg:before:w-[85px] lg:before:h-[85px] xl:before:w-[100px] xl:before:h-[100px]">
+              <h1 className="hero-title-word relative font-Syne text-foreground font-bold text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-[0.95] md:leading-[1] tracking-tight before:rounded-full before:bg-accent before:block before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 md:before:left-0 md:before:translate-x-0 before:-z-[1] before:w-11 before:h-11 sm:before:w-16 md:before:w-20 md:before:h-20 lg:before:w-[85px] lg:before:h-[85px] xl:before:w-[100px] xl:before:h-[100px]">
                 Abdul
               </h1>
-              <h2 className="hero-title-word font-Syne text-foreground font-bold text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-[0.95] md:leading-[1] tracking-tight mb-4 sm:mb-5 mt-1 sm:mt-2 md:mt-4">
+              <h2 className="hero-title-word font-Syne text-foreground font-bold text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-[0.95] md:leading-[1] tracking-tight mb-3 sm:mb-5 mt-0.5 sm:mt-2 md:mt-4">
                 Bari
               </h2>
             </div>
 
-            {/* Subtitle / Roles */}
-            <div className="hero-subtitle flex flex-wrap items-center justify-center md:justify-start gap-2.5 mb-3 sm:mb-4">
-              <p className="font-Syne text-primary font-bold text-base sm:text-xl xl:text-2xl leading-tight">
-                Co-Founder - Nexa Solutions | Meagle 360
-              </p>
-              <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs sm:text-sm font-semibold font-Syne bg-accent/20 border border-accent/40 text-accent-light shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                Ads Specialist
-              </span>
+            {/* Subtitle / Roles Badge */}
+            <div className="hero-subtitle flex flex-wrap items-center justify-center md:justify-start gap-2 mb-3.5 sm:mb-5">
+              <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-primary/30 bg-primary/[0.08] backdrop-blur-sm shadow-[0_0_15px_rgba(124,113,255,0.12)]">
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <p className="font-Syne text-primary-light font-semibold text-xs sm:text-sm md:text-base tracking-wide">
+                  Co-Founder — Nexa Solutions &bull; Meagle 360
+                </p>
+              </div>
             </div>
 
-            {/* Mobile Hero Portrait Display (Exact Capsule Shape & Rotating Stamp) */}
-            <div className="hero-mobile-image md:hidden relative my-6 sm:my-8 flex justify-center items-center w-full max-w-[280px] sm:max-w-[320px] mx-auto">
-              {/* Soft atmospheric violet glow contouring behind the capsule */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent/30 via-primary/20 to-transparent rounded-full blur-2xl -z-10 scale-95 pointer-events-none" />
+            {/* Mobile Hero Portrait Display (Modern Rounded-Full Avatar with Glowing Ring) */}
+            <div className="hero-mobile-image md:hidden relative my-4 sm:my-6 flex justify-center items-center w-full">
+              {/* Soft atmospheric ambient glow */}
+              <div className="absolute w-44 h-44 sm:w-52 sm:h-52 bg-gradient-to-tr from-accent/35 via-primary/25 to-purple-400/20 rounded-full blur-2xl -z-10 pointer-events-none" />
 
-              <div className="relative">
-                {/* Natural diagonal capsule silhouette with zero black corners */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="w-full max-w-[260px] sm:max-w-[290px] h-auto object-contain mx-auto filter drop-shadow-[0_15px_30px_rgba(105,93,255,0.3)] transition-transform duration-300"
-                  src="/assets/images/hero/hero-clean.png"
-                  alt="Abdul Bari"
-                />
+              <div className="relative group">
+                {/* Modern Electric Violet Gradient Border Ring */}
+                <div className="w-[280px] h-[280px] sm:w-54 sm:h-54 p-[3px] rounded-full bg-gradient-to-tr from-[#695DFF] via-[#7C71FF] to-[#DDD8FF] shadow-[0_8px_32px_rgba(105,93,255,0.38)]">
+                  {/* Inner Dark Matte Frame with Rounded Full */}
+                  <div className="w-full h-full rounded-full overflow-hidden bg-[#0A0714] ring-2 ring-[#08070D]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      className="w-full h-full object-cover object-[35%_38%] transition-transform duration-500 hover:scale-105"
+                      src="/assets/images/hero/AbdulBari_image.webp"
+                      alt="Abdul Bari"
+                    />
+                  </div>
+                </div>
 
-                {/* Overlapping Rotating Circular Contact Stamp (exact match with desktop design) */}
+                {/* Overlapping Rotating Circular Contact Stamp */}
                 <a
                   href="#contact"
                   aria-label="Contact Abdul Bari"
-                  className="absolute -bottom-3 -right-2 sm:-right-4 hover:scale-105 active:scale-95 transition-transform"
+                  className="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 hover:scale-105 active:scale-95 transition-transform"
                 >
-                  <RotatingBadge className="w-[84px] h-[84px] sm:w-[96px] sm:h-[96px] drop-shadow-xl" />
+                  <RotatingBadge className="w-[120px] h-[120px] sm:w-[82px] sm:h-[82px] drop-shadow-xl" />
                 </a>
               </div>
             </div>
 
             {/* Bio Description */}
-            <p className="hero-bio font-Syne text-foreground/90 font-medium text-[15px] sm:text-base xl:text-[18px] mb-6 sm:mb-8 max-w-[650px] leading-relaxed mx-auto md:mx-0">
+            <p className="hero-bio font-Syne text-foreground/85 font-medium text-sm sm:text-base xl:text-[18px] mb-5 sm:mb-8 max-w-[620px] leading-relaxed mx-auto md:mx-0">
               I&apos;m an entrepreneur, builder and problem solver, focused on
               web development, SaaS, IT solutions and building scalable digital
               products.
             </p>
 
             {/* Action Buttons: Side-by-Side on all screens */}
-            <div className="flex flex-row items-center justify-center md:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 xl:mb-12">
+            <div className="flex flex-row items-center justify-center md:justify-start gap-2.5 sm:gap-4 mb-6 sm:mb-10 xl:mb-12">
               {/* Button 1: Let's Talk */}
               <a
-                href="https://wa.me/918077313241" target="_blank"
-                className="hero-cta-btn btn-primary flex items-center justify-center gap-2 sm:gap-3 px-5 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-[15px] font-bold group rounded-lg transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:-translate-y-0.5 shrink-0"
+                href="https://wa.me/918077313241"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-cta-btn btn-primary flex items-center justify-center gap-1.5 sm:gap-3 px-4 sm:px-7 py-2.5 sm:py-3.5 text-xs sm:text-[15px] font-bold group rounded-lg transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:-translate-y-0.5 shrink-0"
               >
                 <span>Let’s Talk</span>
                 <span className="inline-block group-hover:animate-arrow-move-up">
@@ -314,7 +320,7 @@ export default function Hero() {
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    className="w-3.5 h-3.5 sm:w-5 sm:h-5"
                   >
                     <path
                       d="M7 17L17 7M7 7H17V17"
@@ -331,7 +337,7 @@ export default function Hero() {
               {/* Button 2: My Work */}
               <a
                 href="#ventures"
-                className="hero-cta-btn btn-primary-outline flex items-center justify-center gap-2 sm:gap-3 px-5 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-[15px] font-bold group rounded-lg transition-all duration-300 hover:-translate-y-0.5 shrink-0"
+                className="hero-cta-btn btn-primary-outline flex items-center justify-center gap-1.5 sm:gap-3 px-4 sm:px-7 py-2.5 sm:py-3.5 text-xs sm:text-[15px] font-bold group rounded-lg transition-all duration-300 hover:-translate-y-0.5 shrink-0"
               >
                 <span>My Work</span>
                 <span className="inline-block group-hover:animate-arrow-move-up">
@@ -341,7 +347,7 @@ export default function Hero() {
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    className="w-3.5 h-3.5 sm:w-5 sm:h-5"
                   >
                     <path
                       d="M7 17L17 7M7 7H17V17"
@@ -357,15 +363,15 @@ export default function Hero() {
             </div>
 
             {/* Stats Count & Social Channels Row */}
-            <div className="hero-stats-row flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 pt-2 w-full">
+            <div className="hero-stats-row flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3.5 sm:gap-6 pt-1 sm:pt-2 w-full">
               <div className="flex items-center justify-center">
-                <span className="font-Syne text-foreground font-bold text-3xl sm:text-[42px] leading-none">
+                <span className="font-Syne text-foreground font-bold text-2xl sm:text-[42px] leading-none">
                   200+
                 </span>
-                <span className="text-xs sm:text-sm text-muted ml-3 font-medium leading-tight max-w-[110px] text-left">
+                <span className="text-[11px] sm:text-sm text-muted ml-2 sm:ml-3 font-medium leading-tight max-w-[110px] text-left">
                   Projects Delivered
                 </span>
-                <span className="mx-4 sm:mx-8 hidden sm:inline-block">
+                <span className="mx-3 sm:mx-8 hidden sm:inline-block">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="2"
@@ -378,7 +384,7 @@ export default function Hero() {
                 </span>
               </div>
 
-              <div className="flex items-center justify-center gap-2.5 sm:gap-3 flex-wrap">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
                 {SOCIAL_CHANNELS.map((channel) => (
                   <a
                     key={channel.name}
@@ -387,10 +393,10 @@ export default function Hero() {
                     rel="noopener noreferrer"
                     aria-label={channel.label}
                     title={`${channel.name}: ${channel.handle}`}
-                    className="hero-social-icon w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/10 bg-[#120E22]/90 hover:bg-white/10 hover:border-primary/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 flex items-center justify-center group shrink-0"
+                    className="hero-social-icon w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-white/10 bg-[#120E22]/90 hover:bg-white/10 hover:border-primary/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 flex items-center justify-center group shrink-0"
                   >
-                    <div className="w-5 h-5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <channel.Icon className="w-5 h-5" />
+                    <div className="w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <channel.Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                   </a>
                 ))}

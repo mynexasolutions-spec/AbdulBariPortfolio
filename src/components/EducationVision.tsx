@@ -145,7 +145,7 @@ export default function EducationVision() {
                       Bachelors in Economics
                     </h3>
                     <p className="text-muted text-xs sm:text-sm font-medium mt-0.5 sm:mt-1 leading-normal">
-                      Completed
+                      AMU
                     </p>
                   </div>
                 </div>

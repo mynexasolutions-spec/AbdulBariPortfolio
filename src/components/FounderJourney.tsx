@@ -104,7 +104,7 @@ export default function FounderJourney() {
       role: "Co-Founder & Builder",
       category: "Innovation & Continuous Learning",
       subtitle: "Exploring, building and growing digital products",
-      tags: ["Problem Solving", "Teamwork", "Innovation", "Continuous Learning"],
+      tags: ["Ads Specialist", "Problem Solving", "Innovation", "Digital Growth"],
       logoType: "laptop",
       accentColor: "#7C71FF",
       glowColor: "rgba(124, 113, 255, 0.4)",
