@@ -273,7 +273,7 @@ export default function Hero() {
 
               <div className="relative group">
                 {/* Modern Electric Violet Gradient Border Ring */}
-                <div className="w-[280px] h-[280px] sm:w-54 sm:h-54 p-[3px] rounded-full bg-gradient-to-tr from-[#695DFF] via-[#7C71FF] to-[#DDD8FF] shadow-[0_8px_32px_rgba(105,93,255,0.38)]">
+                <div className="w-[270px] h-[270px] sm:w-54 sm:h-54 p-[3px] rounded-full bg-gradient-to-tr from-[#695DFF] via-[#7C71FF] to-[#DDD8FF] shadow-[0_8px_32px_rgba(105,93,255,0.38)]">
                   {/* Inner Dark Matte Frame with Rounded Full */}
                   <div className="w-full h-full rounded-full overflow-hidden bg-[#0A0714] ring-2 ring-[#08070D]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -291,7 +291,7 @@ export default function Hero() {
                   aria-label="Contact Abdul Bari"
                   className="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 hover:scale-105 active:scale-95 transition-transform"
                 >
-                  <RotatingBadge className="w-[120px] h-[120px] sm:w-[82px] sm:h-[82px] drop-shadow-xl" />
+                  <RotatingBadge className="w-[110px] h-[110px] sm:w-[82px] sm:h-[82px] drop-shadow-xl" />
                 </a>
               </div>
             </div>
